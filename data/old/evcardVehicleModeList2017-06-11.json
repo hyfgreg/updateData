@@ -1,0 +1,309 @@
+{
+    "vehicleModelSeq": 1,
+    "priceUnit": "/分",
+    "updatedTime": "20170122152231000",
+    "priceDesc": null,
+    "price": -1.0,
+    "vehicleType": 0,
+    "vehicleModelName": "SPRINGO",
+    "approvedSeats": 5,
+    "maxMileage": 120,
+    "grade": 10
+}{
+    "vehicleModelSeq": 2,
+    "priceUnit": "/分",
+    "updatedTime": "20170322141620000",
+    "priceDesc": null,
+    "price": -1.0,
+    "vehicleType": 0,
+    "vehicleModelName": "荣威E50",
+    "approvedSeats": 4,
+    "maxMileage": 100,
+    "grade": 10
+}{
+    "vehicleModelSeq": 3,
+    "priceUnit": "/分",
+    "updatedTime": "20161108105209967",
+    "priceDesc": null,
+    "price": -1.0,
+    "vehicleType": 0,
+    "vehicleModelName": "比亚迪E6",
+    "approvedSeats": 5,
+    "maxMileage": 120,
+    "grade": 10
+}{
+    "vehicleModelSeq": 4,
+    "priceUnit": "/分",
+    "updatedTime": "20140416142856567",
+    "priceDesc": null,
+    "price": -1.0,
+    "vehicleType": 0,
+    "vehicleModelName": "宝马active",
+    "approvedSeats": 5,
+    "maxMileage": 120,
+    "grade": 10
+}{
+    "vehicleModelSeq": 97,
+    "priceUnit": "/分",
+    "updatedTime": null,
+    "priceDesc": null,
+    "price": -1.0,
+    "vehicleType": 1,
+    "vehicleModelName": "比亚迪秦",
+    "approvedSeats": 0,
+    "maxMileage": 120,
+    "grade": 10
+}{
+    "vehicleModelSeq": 98,
+    "priceUnit": "/分",
+    "updatedTime": null,
+    "priceDesc": null,
+    "price": -1.0,
+    "vehicleType": 1,
+    "vehicleModelName": "沃蓝达",
+    "approvedSeats": 0,
+    "maxMileage": 120,
+    "grade": 10
+}{
+    "vehicleModelSeq": 99,
+    "priceUnit": "/分",
+    "updatedTime": null,
+    "priceDesc": null,
+    "price": -1.0,
+    "vehicleType": 1,
+    "vehicleModelName": "荣威550旗舰",
+    "approvedSeats": 0,
+    "maxMileage": 120,
+    "grade": 10
+}{
+    "vehicleModelSeq": 100,
+    "priceUnit": "/分",
+    "updatedTime": null,
+    "priceDesc": null,
+    "price": -1.0,
+    "vehicleType": 1,
+    "vehicleModelName": "荣威550豪华",
+    "approvedSeats": 0,
+    "maxMileage": 120,
+    "grade": 10
+}{
+    "vehicleModelSeq": 101,
+    "priceUnit": "/分",
+    "updatedTime": "20160226143701824",
+    "priceDesc": null,
+    "price": -1.0,
+    "vehicleType": 0,
+    "vehicleModelName": "特斯拉Model S ",
+    "approvedSeats": 0,
+    "maxMileage": 120,
+    "grade": 10
+}{
+    "vehicleModelSeq": 102,
+    "priceUnit": "/分",
+    "updatedTime": null,
+    "priceDesc": null,
+    "price": -1.0,
+    "vehicleType": 0,
+    "vehicleModelName": "腾势",
+    "approvedSeats": 0,
+    "maxMileage": 120,
+    "grade": 10
+}{
+    "vehicleModelSeq": 103,
+    "priceUnit": "/分",
+    "updatedTime": "20170228024248000",
+    "priceDesc": null,
+    "price": -1.0,
+    "vehicleType": 0,
+    "vehicleModelName": "之诺1E",
+    "approvedSeats": 5,
+    "maxMileage": 120,
+    "grade": 10
+}{
+    "vehicleModelSeq": 104,
+    "priceUnit": "/分",
+    "updatedTime": "20170509111242000",
+    "priceDesc": null,
+    "price": -1.0,
+    "vehicleType": 1,
+    "vehicleModelName": "宝马i3",
+    "approvedSeats": 5,
+    "maxMileage": 180,
+    "grade": 30
+}{
+    "vehicleModelSeq": 106,
+    "priceUnit": "/分",
+    "updatedTime": "20170315170746000",
+    "priceDesc": null,
+    "price": -1.0,
+    "vehicleType": 0,
+    "vehicleModelName": "奇瑞EQ",
+    "approvedSeats": 4,
+    "maxMileage": 150,
+    "grade": 10
+}{
+    "vehicleModelSeq": 107,
+    "priceUnit": "/分",
+    "updatedTime": "20160415145702175",
+    "priceDesc": null,
+    "price": -1.0,
+    "vehicleType": 1,
+    "vehicleModelName": "S60",
+    "approvedSeats": 0,
+    "maxMileage": 0,
+    "grade": 10
+}{
+    "vehicleModelSeq": 109,
+    "priceUnit": "/分",
+    "updatedTime": null,
+    "priceDesc": null,
+    "price": -1.0,
+    "vehicleType": 1,
+    "vehicleModelName": "唐",
+    "approvedSeats": 0,
+    "maxMileage": 0,
+    "grade": 10
+}{
+    "vehicleModelSeq": 110,
+    "priceUnit": "/分",
+    "updatedTime": "20170123094754000",
+    "priceDesc": null,
+    "price": -1.0,
+    "vehicleType": 3,
+    "vehicleModelName": "大通G10",
+    "approvedSeats": 0,
+    "maxMileage": 0,
+    "grade": 10
+}{
+    "vehicleModelSeq": 111,
+    "priceUnit": "/分",
+    "updatedTime": "20170428131627000",
+    "priceDesc": null,
+    "price": -1.0,
+    "vehicleType": 1,
+    "vehicleModelName": "530le",
+    "approvedSeats": 0,
+    "maxMileage": 0,
+    "grade": 10
+}{
+    "vehicleModelSeq": 112,
+    "priceUnit": "/分",
+    "updatedTime": "20170123095129000",
+    "priceDesc": null,
+    "price": -1.0,
+    "vehicleType": 3,
+    "vehicleModelName": "别克GL8",
+    "approvedSeats": 0,
+    "maxMileage": 0,
+    "grade": 10
+}{
+    "vehicleModelSeq": 113,
+    "priceUnit": "/分",
+    "updatedTime": "20170228024305000",
+    "priceDesc": null,
+    "price": -1.0,
+    "vehicleType": 0,
+    "vehicleModelName": "普力马EV",
+    "approvedSeats": 5,
+    "maxMileage": 150,
+    "grade": 10
+}{
+    "vehicleModelSeq": 114,
+    "priceUnit": "/分",
+    "updatedTime": "20170421145307000",
+    "priceDesc": null,
+    "price": -1.0,
+    "vehicleType": 2,
+    "vehicleModelName": "荣威750",
+    "approvedSeats": 0,
+    "maxMileage": 0,
+    "grade": 10
+}{
+    "vehicleModelSeq": 115,
+    "priceUnit": "/分",
+    "updatedTime": null,
+    "priceDesc": null,
+    "price": -1.0,
+    "vehicleType": 0,
+    "vehicleModelName": "大通EG10",
+    "approvedSeats": 0,
+    "maxMileage": 0,
+    "grade": 10
+}{
+    "vehicleModelSeq": 116,
+    "priceUnit": "/分",
+    "updatedTime": null,
+    "priceDesc": null,
+    "price": -1.0,
+    "vehicleType": 1,
+    "vehicleModelName": "荣威E550",
+    "approvedSeats": 0,
+    "maxMileage": 0,
+    "grade": 10
+}{
+    "vehicleModelSeq": 117,
+    "priceUnit": "/分",
+    "updatedTime": "20170315170258000",
+    "priceDesc": null,
+    "price": -1.0,
+    "vehicleType": 0,
+    "vehicleModelName": "北汽EV160",
+    "approvedSeats": 5,
+    "maxMileage": 150,
+    "grade": 10
+}{
+    "vehicleModelSeq": 118,
+    "priceUnit": "/分",
+    "updatedTime": "20170215163643000",
+    "priceDesc": null,
+    "price": -1.0,
+    "vehicleType": 1,
+    "vehicleModelName": "荣威550Plug-in",
+    "approvedSeats": 0,
+    "maxMileage": 0,
+    "grade": 10
+}{
+    "vehicleModelSeq": 119,
+    "priceUnit": "/分",
+    "updatedTime": "20170503135102000",
+    "priceDesc": null,
+    "price": -1.0,
+    "vehicleType": 0,
+    "vehicleModelName": "北汽电动车",
+    "approvedSeats": 0,
+    "maxMileage": 0,
+    "grade": 10
+}{
+    "vehicleModelSeq": 120,
+    "priceUnit": "/分",
+    "updatedTime": "20170315170047000",
+    "priceDesc": null,
+    "price": -1.0,
+    "vehicleType": 0,
+    "vehicleModelName": "众泰E200",
+    "approvedSeats": 0,
+    "maxMileage": 120,
+    "grade": 10
+}{
+    "vehicleModelSeq": 121,
+    "priceUnit": "/分",
+    "updatedTime": null,
+    "priceDesc": null,
+    "price": -1.0,
+    "vehicleType": 0,
+    "vehicleModelName": "野马T70",
+    "approvedSeats": 0,
+    "maxMileage": 0,
+    "grade": 10
+}{
+    "vehicleModelSeq": 122,
+    "priceUnit": "/分",
+    "updatedTime": "20170509111045000",
+    "priceDesc": null,
+    "price": -1.0,
+    "vehicleType": 0,
+    "vehicleModelName": "江淮IEV7",
+    "approvedSeats": 0,
+    "maxMileage": 165,
+    "grade": 10
+}

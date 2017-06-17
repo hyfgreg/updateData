@@ -1,0 +1,666 @@
+{
+    "city": "北京市",
+    "latitude": 39.956074,
+    "cityId": 110100,
+    "label": "海淀区",
+    "longitude": 116.31032,
+    "code": "110108"
+}{
+    "city": "忻州市",
+    "latitude": 38.417744,
+    "cityId": 140900,
+    "label": "忻府区",
+    "longitude": 112.734116,
+    "code": "140902"
+}{
+    "city": "上海市",
+    "latitude": 31.22277,
+    "cityId": 310100,
+    "label": "黄浦区",
+    "longitude": 121.49032,
+    "code": "310101"
+}{
+    "city": "上海市",
+    "latitude": 31.179974,
+    "cityId": 310100,
+    "label": "徐汇区",
+    "longitude": 121.43752,
+    "code": "310104"
+}{
+    "city": "上海市",
+    "latitude": 31.218122,
+    "cityId": 310100,
+    "label": "长宁区",
+    "longitude": 121.4222,
+    "code": "310105"
+}{
+    "city": "上海市",
+    "latitude": 31.229004,
+    "cityId": 310100,
+    "label": "静安区",
+    "longitude": 121.44823,
+    "code": "310106"
+}{
+    "city": "上海市",
+    "latitude": 31.241701,
+    "cityId": 310100,
+    "label": "普陀区",
+    "longitude": 121.3925,
+    "code": "310107"
+}{
+    "city": "上海市",
+    "latitude": 31.26097,
+    "cityId": 310100,
+    "label": "虹口区",
+    "longitude": 121.49183,
+    "code": "310109"
+}{
+    "city": "上海市",
+    "latitude": 31.270756,
+    "cityId": 310100,
+    "label": "杨浦区",
+    "longitude": 121.5228,
+    "code": "310110"
+}{
+    "city": "上海市",
+    "latitude": 31.111658,
+    "cityId": 310100,
+    "label": "闵行区",
+    "longitude": 121.37597,
+    "code": "310112"
+}{
+    "city": "上海市",
+    "latitude": 31.398895,
+    "cityId": 310100,
+    "label": "宝山区",
+    "longitude": 121.48994,
+    "code": "310113"
+}{
+    "city": "上海市",
+    "latitude": 31.383524,
+    "cityId": 310100,
+    "label": "嘉定区",
+    "longitude": 121.250336,
+    "code": "310114"
+}{
+    "city": "上海市",
+    "latitude": 31.245943,
+    "cityId": 310100,
+    "label": "浦东新区",
+    "longitude": 121.5677,
+    "code": "310115"
+}{
+    "city": "上海市",
+    "latitude": 30.724697,
+    "cityId": 310100,
+    "label": "金山区",
+    "longitude": 121.330734,
+    "code": "310116"
+}{
+    "city": "上海市",
+    "latitude": 31.03047,
+    "cityId": 310100,
+    "label": "松江区",
+    "longitude": 121.22354,
+    "code": "310117"
+}{
+    "city": "上海市",
+    "latitude": 31.151209,
+    "cityId": 310100,
+    "label": "青浦区",
+    "longitude": 121.11302,
+    "code": "310118"
+}{
+    "city": "上海市",
+    "latitude": 30.912346,
+    "cityId": 310100,
+    "label": "奉贤区",
+    "longitude": 121.45847,
+    "code": "310120"
+}{
+    "city": "上海市",
+    "latitude": 39.904987,
+    "cityId": 310100,
+    "label": "崇明区",
+    "longitude": 116.40529,
+    "code": "310230"
+}{
+    "city": "南京市",
+    "latitude": 32.05068,
+    "cityId": 320100,
+    "label": "玄武区",
+    "longitude": 118.7922,
+    "code": "320102"
+}{
+    "city": "南京市",
+    "latitude": 32.033817,
+    "cityId": 320100,
+    "label": "秦淮区",
+    "longitude": 118.78609,
+    "code": "320104"
+}{
+    "city": "南京市",
+    "latitude": 32.00454,
+    "cityId": 320100,
+    "label": "建邺区",
+    "longitude": 118.73269,
+    "code": "320105"
+}{
+    "city": "南京市",
+    "latitude": 32.066967,
+    "cityId": 320100,
+    "label": "鼓楼区",
+    "longitude": 118.76974,
+    "code": "320106"
+}{
+    "city": "南京市",
+    "latitude": 32.05839,
+    "cityId": 320100,
+    "label": "浦口区",
+    "longitude": 118.625305,
+    "code": "320111"
+}{
+    "city": "南京市",
+    "latitude": 32.102146,
+    "cityId": 320100,
+    "label": "栖霞区",
+    "longitude": 118.8087,
+    "code": "320113"
+}{
+    "city": "南京市",
+    "latitude": 31.995947,
+    "cityId": 320100,
+    "label": "雨花台区",
+    "longitude": 118.77207,
+    "code": "320114"
+}{
+    "city": "南京市",
+    "latitude": 31.953419,
+    "cityId": 320100,
+    "label": "江宁区",
+    "longitude": 118.850624,
+    "code": "320115"
+}{
+    "city": "无锡市",
+    "latitude": 31.550228,
+    "cityId": 320200,
+    "label": "滨湖区",
+    "longitude": 120.26605,
+    "code": "320211"
+}{
+    "city": "徐州市",
+    "latitude": 34.269398,
+    "cityId": 320300,
+    "label": "鼓楼区",
+    "longitude": 117.19294,
+    "code": "320302"
+}{
+    "city": "徐州市",
+    "latitude": 34.254807,
+    "cityId": 320300,
+    "label": "云龙区",
+    "longitude": 117.19459,
+    "code": "320303"
+}{
+    "city": "徐州市",
+    "latitude": 34.26225,
+    "cityId": 320300,
+    "label": "泉山区",
+    "longitude": 117.18223,
+    "code": "320311"
+}{
+    "city": "徐州市",
+    "latitude": 34.19288,
+    "cityId": 320300,
+    "label": "铜山区",
+    "longitude": 117.18389,
+    "code": "320312"
+}{
+    "city": "常州市",
+    "latitude": 31.779633,
+    "cityId": 320400,
+    "label": "天宁区",
+    "longitude": 119.96378,
+    "code": "320402"
+}{
+    "city": "常州市",
+    "latitude": 31.718567,
+    "cityId": 320400,
+    "label": "武进区",
+    "longitude": 119.95877,
+    "code": "320412"
+}{
+    "city": "苏州市",
+    "latitude": 31.294846,
+    "cityId": 320500,
+    "label": "虎丘区",
+    "longitude": 120.56683,
+    "code": "320505"
+}{
+    "city": "苏州市",
+    "latitude": 31.27084,
+    "cityId": 320500,
+    "label": "吴中区",
+    "longitude": 120.62462,
+    "code": "320506"
+}{
+    "city": "苏州市",
+    "latitude": 31.396685,
+    "cityId": 320500,
+    "label": "相城区",
+    "longitude": 120.61896,
+    "code": "320507"
+}{
+    "city": "苏州市",
+    "latitude": 31.311415,
+    "cityId": 320500,
+    "label": "姑苏区",
+    "longitude": 120.622246,
+    "code": "320508"
+}{
+    "city": "苏州市",
+    "latitude": 31.658155,
+    "cityId": 320500,
+    "label": "常熟市",
+    "longitude": 120.74852,
+    "code": "320581"
+}{
+    "city": "苏州市",
+    "latitude": 31.381926,
+    "cityId": 320500,
+    "label": "昆山市",
+    "longitude": 120.95814,
+    "code": "320583"
+}{
+    "city": "苏州市",
+    "latitude": 31.452568,
+    "cityId": 320500,
+    "label": "太仓市",
+    "longitude": 121.112274,
+    "code": "320585"
+}{
+    "city": "南通市",
+    "latitude": 31.893528,
+    "cityId": 320600,
+    "label": "海门市",
+    "longitude": 121.176605,
+    "code": "320684"
+}{
+    "city": "盐城市",
+    "latitude": 33.38391,
+    "cityId": 320900,
+    "label": "亭湖区",
+    "longitude": 120.13608,
+    "code": "320902"
+}{
+    "city": "盐城市",
+    "latitude": 33.34129,
+    "cityId": 320900,
+    "label": "盐都区",
+    "longitude": 120.139755,
+    "code": "320903"
+}{
+    "city": "镇江市",
+    "latitude": 32.206192,
+    "cityId": 321100,
+    "label": "京口区",
+    "longitude": 119.454575,
+    "code": "321102"
+}{
+    "city": "镇江市",
+    "latitude": 32.2135,
+    "cityId": 321100,
+    "label": "润州区",
+    "longitude": 119.41488,
+    "code": "321111"
+}{
+    "city": "镇江市",
+    "latitude": 32.12897,
+    "cityId": 321100,
+    "label": "丹徒区",
+    "longitude": 119.43388,
+    "code": "321112"
+}{
+    "city": "镇江市",
+    "latitude": 31.947355,
+    "cityId": 321100,
+    "label": "句容市",
+    "longitude": 119.16714,
+    "code": "321183"
+}{
+    "city": "嘉兴市",
+    "latitude": 30.764652,
+    "cityId": 330400,
+    "label": "南湖区",
+    "longitude": 120.749954,
+    "code": "330402"
+}{
+    "city": "嘉兴市",
+    "latitude": 30.763323,
+    "cityId": 330400,
+    "label": "秀洲区",
+    "longitude": 120.72043,
+    "code": "330411"
+}{
+    "city": "嘉兴市",
+    "latitude": 30.782665,
+    "cityId": 330400,
+    "label": "嘉兴经开区",
+    "longitude": 120.69713,
+    "code": "330484"
+}{
+    "city": "金华市",
+    "latitude": 29.210066,
+    "cityId": 330700,
+    "label": "兰溪市",
+    "longitude": 119.46052,
+    "code": "330781"
+}{
+    "city": "衢州市",
+    "latitude": 28.734674,
+    "cityId": 330800,
+    "label": "江山市",
+    "longitude": 118.62788,
+    "code": "330881"
+}{
+    "city": "丽水市",
+    "latitude": 28.451103,
+    "cityId": 331100,
+    "label": "莲都区",
+    "longitude": 119.922295,
+    "code": "331102"
+}{
+    "city": "丽水市",
+    "latitude": 28.135246,
+    "cityId": 331100,
+    "label": "青田县",
+    "longitude": 120.29194,
+    "code": "331121"
+}{
+    "city": "丽水市",
+    "latitude": 28.654207,
+    "cityId": 331100,
+    "label": "缙云县",
+    "longitude": 120.078964,
+    "code": "331122"
+}{
+    "city": "丽水市",
+    "latitude": 28.5924,
+    "cityId": 331100,
+    "label": "遂昌县",
+    "longitude": 119.27589,
+    "code": "331123"
+}{
+    "city": "丽水市",
+    "latitude": 28.449938,
+    "cityId": 331100,
+    "label": "松阳县",
+    "longitude": 119.48529,
+    "code": "331124"
+}{
+    "city": "丽水市",
+    "latitude": 28.111076,
+    "cityId": 331100,
+    "label": "云和县",
+    "longitude": 119.56946,
+    "code": "331125"
+}{
+    "city": "丽水市",
+    "latitude": 28.069178,
+    "cityId": 331100,
+    "label": "龙泉市",
+    "longitude": 119.13232,
+    "code": "331181"
+}{
+    "city": "合肥市",
+    "latitude": 31.855867,
+    "cityId": 340100,
+    "label": "蜀山区",
+    "longitude": 117.26207,
+    "code": "340104"
+}{
+    "city": "合肥市",
+    "latitude": 31.82956,
+    "cityId": 340100,
+    "label": "包河区",
+    "longitude": 117.28575,
+    "code": "340111"
+}{
+    "city": "三明市",
+    "latitude": 26.269209,
+    "cityId": 350400,
+    "label": "梅列区",
+    "longitude": 117.63687,
+    "code": "350402"
+}{
+    "city": "三明市",
+    "latitude": 26.397362,
+    "cityId": 350400,
+    "label": "沙县",
+    "longitude": 117.78909,
+    "code": "350427"
+}{
+    "city": "青岛市",
+    "latitude": 36.10257,
+    "cityId": 370200,
+    "label": "崂山区",
+    "longitude": 120.46739,
+    "code": "370212"
+}{
+    "city": "青岛市",
+    "latitude": 36.30683,
+    "cityId": 370200,
+    "label": "城阳区",
+    "longitude": 120.38914,
+    "code": "370214"
+}{
+    "city": "青岛市",
+    "latitude": 36.86509,
+    "cityId": 370200,
+    "label": "莱西市",
+    "longitude": 120.52622,
+    "code": "370285"
+}{
+    "city": "广州市",
+    "latitude": 23.125624,
+    "cityId": 440100,
+    "label": "越秀区",
+    "longitude": 113.280716,
+    "code": "440104"
+}{
+    "city": "广州市",
+    "latitude": 23.10313,
+    "cityId": 440100,
+    "label": "海珠区",
+    "longitude": 113.26201,
+    "code": "440105"
+}{
+    "city": "广州市",
+    "latitude": 23.13559,
+    "cityId": 440100,
+    "label": "天河区",
+    "longitude": 113.335365,
+    "code": "440106"
+}{
+    "city": "广州市",
+    "latitude": 23.10324,
+    "cityId": 440100,
+    "label": "黄埔区",
+    "longitude": 113.45076,
+    "code": "440112"
+}{
+    "city": "海口市",
+    "latitude": 20.008144,
+    "cityId": 460100,
+    "label": "秀英区",
+    "longitude": 110.282394,
+    "code": "460105"
+}{
+    "city": "海口市",
+    "latitude": 20.031027,
+    "cityId": 460100,
+    "label": "龙华区",
+    "longitude": 110.330376,
+    "code": "460106"
+}{
+    "city": "海口市",
+    "latitude": 20.00105,
+    "cityId": 460100,
+    "label": "琼山区",
+    "longitude": 110.35472,
+    "code": "460107"
+}{
+    "city": "海口市",
+    "latitude": 20.03074,
+    "cityId": 460100,
+    "label": "美兰区",
+    "longitude": 110.35657,
+    "code": "460108"
+}{
+    "city": "昌江黎族自治县市",
+    "latitude": 19.260967,
+    "cityId": 469026,
+    "label": "昌江黎族自治县",
+    "longitude": 109.05335,
+    "code": "469026"
+}{
+    "city": "重庆市",
+    "latitude": 29.556742,
+    "cityId": 500100,
+    "label": "渝中区",
+    "longitude": 106.56288,
+    "code": "500103"
+}{
+    "city": "重庆市",
+    "latitude": 29.481003,
+    "cityId": 500100,
+    "label": "大渡口区",
+    "longitude": 106.48613,
+    "code": "500104"
+}{
+    "city": "重庆市",
+    "latitude": 29.575352,
+    "cityId": 500100,
+    "label": "江北区",
+    "longitude": 106.532845,
+    "code": "500105"
+}{
+    "city": "重庆市",
+    "latitude": 29.541224,
+    "cityId": 500100,
+    "label": "沙坪坝区",
+    "longitude": 106.4542,
+    "code": "500106"
+}{
+    "city": "重庆市",
+    "latitude": 29.523493,
+    "cityId": 500100,
+    "label": "九龙坡区",
+    "longitude": 106.48099,
+    "code": "500107"
+}{
+    "city": "重庆市",
+    "latitude": 29.523993,
+    "cityId": 500100,
+    "label": "南岸区",
+    "longitude": 106.560814,
+    "code": "500108"
+}{
+    "city": "重庆市",
+    "latitude": 29.601452,
+    "cityId": 500100,
+    "label": "渝北区",
+    "longitude": 106.51285,
+    "code": "500112"
+}{
+    "city": "重庆市",
+    "latitude": 29.59358,
+    "cityId": 500100,
+    "label": "璧山区",
+    "longitude": 106.231125,
+    "code": "500120"
+}{
+    "city": "成都市",
+    "latitude": 30.657688,
+    "cityId": 510100,
+    "label": "锦江区",
+    "longitude": 104.080986,
+    "code": "510104"
+}{
+    "city": "成都市",
+    "latitude": 30.667648,
+    "cityId": 510100,
+    "label": "青羊区",
+    "longitude": 104.05573,
+    "code": "510105"
+}{
+    "city": "成都市",
+    "latitude": 30.692059,
+    "cityId": 510100,
+    "label": "金牛区",
+    "longitude": 104.04349,
+    "code": "510106"
+}{
+    "city": "成都市",
+    "latitude": 30.630861,
+    "cityId": 510100,
+    "label": "武侯区",
+    "longitude": 104.05167,
+    "code": "510107"
+}{
+    "city": "成都市",
+    "latitude": 30.660275,
+    "cityId": 510100,
+    "label": "成华区",
+    "longitude": 104.10308,
+    "code": "510108"
+}{
+    "city": "成都市",
+    "latitude": 30.56065,
+    "cityId": 510100,
+    "label": "龙泉驿区",
+    "longitude": 104.26918,
+    "code": "510112"
+}{
+    "city": "成都市",
+    "latitude": 30.883438,
+    "cityId": 510100,
+    "label": "青白江区",
+    "longitude": 104.25494,
+    "code": "510113"
+}{
+    "city": "成都市",
+    "latitude": 30.824223,
+    "cityId": 510100,
+    "label": "新都区",
+    "longitude": 104.16022,
+    "code": "510114"
+}{
+    "city": "成都市",
+    "latitude": 30.697996,
+    "cityId": 510100,
+    "label": "温江区",
+    "longitude": 103.83678,
+    "code": "510115"
+}{
+    "city": "成都市",
+    "latitude": 39.904987,
+    "cityId": 510100,
+    "label": "双流区",
+    "longitude": 116.40529,
+    "code": "510116"
+}{
+    "city": "成都市",
+    "latitude": 30.808752,
+    "cityId": 510100,
+    "label": "郫县",
+    "longitude": 103.88784,
+    "code": "510124"
+}{
+    "city": "昆明市",
+    "latitude": 25.070238,
+    "cityId": 530100,
+    "label": "盘龙区",
+    "longitude": 102.72904,
+    "code": "530103"
+}
