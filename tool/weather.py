@@ -8,7 +8,7 @@ from config import *
 
 
 class Weather(object):
-    def __init__(self,city=None):
+    def __init__(self,city = None):
         self._city = city
         self._cityPY = None
         self._cityFileName = None
@@ -58,16 +58,21 @@ class Weather(object):
                 print('解析城市天气失败！')
                 return None
 
+    def mongoData(self,data):
+        today = date.today().strftime('%Y-%m-%d')
+        return {today:data}
+
     def saveToMongo(self):
-        if self._weather:
-            db = self._client[MONGO_DB.get('天气')]
-            self.setPY()
-            if db[self._cityPY].insert(self._weather):
-                print('成功保存到Mongo')
+        if not self._weather:
+            self.setCityWeather()
+        db = self._client[MONGO_DB.get('天气')]
+        self.setPY()
+        if db[self._cityPY].insert(self.mongoData(self._weather)):
+            print('成功保存天气到Mongo',self._city)
 
     def save(self):
         try:
-            if self._weather == None:
+            if not self._weather:
                 self.setCityWeather()
             self.setCityFileName()
             with open(DATAFOLDER+self._cityFileName, 'w', encoding='utf-8') as f:

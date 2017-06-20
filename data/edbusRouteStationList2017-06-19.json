@@ -1,0 +1,854 @@
+{
+    "network_node_edbus": [
+        {
+            "name": "同济大学嘉定校区",
+            "UID": 1,
+            "Latitude": "121.217442",
+            "Longitude": "31.288512",
+            "lineName": "汽车城---虹桥枢纽专线",
+            "LineID": "21",
+            "MID": "1",
+            "type": "0"
+        },
+        {
+            "name": "嘉亭荟（11号线安亭站）",
+            "UID": 2,
+            "Latitude": "121.16984",
+            "Longitude": "31.293667",
+            "lineName": "汽车城---虹桥枢纽专线",
+            "LineID": "21",
+            "MID": "2",
+            "type": "0"
+        },
+        {
+            "name": "汽车城大厦",
+            "UID": 3,
+            "Latitude": "121.171028",
+            "Longitude": "31.286734",
+            "lineName": "汽车城---虹桥枢纽专线",
+            "LineID": "21",
+            "MID": "3",
+            "type": "0"
+        },
+        {
+            "name": "安亭新镇",
+            "UID": 4,
+            "Latitude": "121.176479",
+            "Longitude": "31.276408",
+            "lineName": "汽车城---虹桥枢纽专线",
+            "LineID": "21",
+            "MID": "4",
+            "type": "0"
+        },
+        {
+            "name": "会展中心(博物馆)",
+            "UID": 5,
+            "Latitude": "121.175576",
+            "Longitude": "31.284452",
+            "lineName": "汽车城---虹桥枢纽专线",
+            "LineID": "21",
+            "MID": "5",
+            "type": "0"
+        },
+        {
+            "name": "万立城（汽车城站）",
+            "UID": 6,
+            "Latitude": "121.186949",
+            "Longitude": "31.289966",
+            "lineName": "汽车城---虹桥枢纽专线",
+            "LineID": "21",
+            "MID": "6",
+            "type": "0"
+        },
+        {
+            "name": " 检测中心",
+            "UID": 7,
+            "Latitude": "121.189696",
+            "Longitude": "31.288187",
+            "lineName": "汽车城---虹桥枢纽专线",
+            "LineID": "21",
+            "MID": "7",
+            "type": "0"
+        },
+        {
+            "name": "创新港（舍弗勒）",
+            "UID": 8,
+            "Latitude": "121.199315",
+            "Longitude": "31.284537",
+            "lineName": "汽车城---虹桥枢纽专线",
+            "LineID": "21",
+            "MID": "8",
+            "type": "0"
+        },
+        {
+            "name": "颖奕酒店（高尔夫）",
+            "UID": 9,
+            "Latitude": "121.197517",
+            "Longitude": "31.278544",
+            "lineName": "汽车城---虹桥枢纽专线",
+            "LineID": "21",
+            "MID": "9",
+            "type": "0"
+        },
+        {
+            "name": "虹桥机场T2（北）出发9号门",
+            "UID": 10,
+            "Latitude": "121.332175",
+            "Longitude": "31.201568",
+            "lineName": "汽车城---虹桥枢纽专线",
+            "LineID": "21",
+            "MID": "10",
+            "type": "0"
+        },
+        {
+            "name": "虹桥火车站P9停车场",
+            "UID": 11,
+            "Latitude": "121.324073",
+            "Longitude": "31.201165",
+            "lineName": "汽车城---虹桥枢纽专线",
+            "LineID": "21",
+            "MID": "11",
+            "type": "0"
+        },
+        {
+            "name": "虹桥火车站P9停车场",
+            "UID": 12,
+            "Latitude": "121.324073",
+            "Longitude": "31.201165",
+            "lineName": "汽车城---虹桥枢纽专线",
+            "LineID": "21",
+            "MID": "1",
+            "type": "1"
+        },
+        {
+            "name": "颖奕酒店（高尔夫）",
+            "UID": 13,
+            "Latitude": "121.197517",
+            "Longitude": "31.278544",
+            "lineName": "汽车城---虹桥枢纽专线",
+            "LineID": "21",
+            "MID": "2",
+            "type": "1"
+        },
+        {
+            "name": "创新港（舍弗勒）",
+            "UID": 14,
+            "Latitude": "121.200147",
+            "Longitude": "31.284028",
+            "lineName": "汽车城---虹桥枢纽专线",
+            "LineID": "21",
+            "MID": "3",
+            "type": "1"
+        },
+        {
+            "name": " 检测中心",
+            "UID": 15,
+            "Latitude": "121.189696",
+            "Longitude": "31.288187",
+            "lineName": "汽车城---虹桥枢纽专线",
+            "LineID": "21",
+            "MID": "4",
+            "type": "1"
+        },
+        {
+            "name": "万立城（汽车城站）",
+            "UID": 16,
+            "Latitude": "121.186949",
+            "Longitude": "31.289966",
+            "lineName": "汽车城---虹桥枢纽专线",
+            "LineID": "21",
+            "MID": "5",
+            "type": "1"
+        },
+        {
+            "name": "会展中心（博物馆）",
+            "UID": 17,
+            "Latitude": "121.175576",
+            "Longitude": "31.284452",
+            "lineName": "汽车城---虹桥枢纽专线",
+            "LineID": "21",
+            "MID": "6",
+            "type": "1"
+        },
+        {
+            "name": "安亭新镇",
+            "UID": 18,
+            "Latitude": "121.176341",
+            "Longitude": "31.276364",
+            "lineName": "汽车城---虹桥枢纽专线",
+            "LineID": "21",
+            "MID": "7",
+            "type": "1"
+        },
+        {
+            "name": "汽车城大厦",
+            "UID": 19,
+            "Latitude": "121.171249",
+            "Longitude": "31.287038",
+            "lineName": "汽车城---虹桥枢纽专线",
+            "LineID": "21",
+            "MID": "8",
+            "type": "1"
+        },
+        {
+            "name": "嘉亭荟（安亭站)",
+            "UID": 20,
+            "Latitude": "121.17013",
+            "Longitude": "31.29278",
+            "lineName": "汽车城---虹桥枢纽专线",
+            "LineID": "21",
+            "MID": "9",
+            "type": "1"
+        },
+        {
+            "name": "同济大学嘉定校区站",
+            "UID": 21,
+            "Latitude": "121.217442",
+            "Longitude": "31.288512",
+            "lineName": "汽车城---虹桥枢纽专线",
+            "LineID": "21",
+            "MID": "10",
+            "type": "1"
+        },
+        {
+            "name": "市民广场",
+            "UID": 22,
+            "Latitude": "31.304435",
+            "Longitude": "121.170016",
+            "lineName": null,
+            "LineID": "101",
+            "MID": "1",
+            "type": "0"
+        },
+        {
+            "name": "嘉亭荟",
+            "UID": 23,
+            "Latitude": "31.293667",
+            "Longitude": "121.16984",
+            "lineName": null,
+            "LineID": "101",
+            "MID": "2",
+            "type": "0"
+        },
+        {
+            "name": "安亭新镇",
+            "UID": 24,
+            "Latitude": "31.276408",
+            "Longitude": "121.176479",
+            "lineName": null,
+            "LineID": "101",
+            "MID": "3",
+            "type": "0"
+        },
+        {
+            "name": "华东师范大学（普陀校区）",
+            "UID": 25,
+            "Latitude": "31.233083",
+            "Longitude": "121.416933",
+            "lineName": null,
+            "LineID": "101",
+            "MID": "4",
+            "type": "0"
+        },
+        {
+            "name": "中山公园",
+            "UID": 26,
+            "Latitude": "31.222783",
+            "Longitude": "121.422288",
+            "lineName": null,
+            "LineID": "101",
+            "MID": "5",
+            "type": "0"
+        },
+        {
+            "name": "中山公园",
+            "UID": 27,
+            "Latitude": "31.22276",
+            "Longitude": "121.422393",
+            "lineName": null,
+            "LineID": "101",
+            "MID": "1",
+            "type": "1"
+        },
+        {
+            "name": "华东师范大学（普陀校区）",
+            "UID": 28,
+            "Latitude": "31.233318",
+            "Longitude": "121.417379",
+            "lineName": null,
+            "LineID": "101",
+            "MID": "2",
+            "type": "1"
+        },
+        {
+            "name": "安亭新镇",
+            "UID": 29,
+            "Latitude": "31.276364",
+            "Longitude": "121.176341",
+            "lineName": null,
+            "LineID": "101",
+            "MID": "3",
+            "type": "1"
+        },
+        {
+            "name": "嘉亭荟",
+            "UID": 30,
+            "Latitude": "31.29278",
+            "Longitude": "121.17013",
+            "lineName": null,
+            "LineID": "101",
+            "MID": "4",
+            "type": "1"
+        },
+        {
+            "name": "市民广场",
+            "UID": 31,
+            "Latitude": "31.304435",
+            "Longitude": "121.170016",
+            "lineName": null,
+            "LineID": "101",
+            "MID": "5",
+            "type": "1"
+        },
+        {
+            "name": "嘉定北",
+            "UID": 32,
+            "Latitude": "31.397157",
+            "Longitude": "121.242941",
+            "lineName": null,
+            "LineID": "61",
+            "MID": "1",
+            "type": "0"
+        },
+        {
+            "name": "五月花广场华润万家",
+            "UID": 33,
+            "Latitude": "31.407358",
+            "Longitude": "121.258041",
+            "lineName": null,
+            "LineID": "61",
+            "MID": "2",
+            "type": "0"
+        },
+        {
+            "name": "菊园科创大厦",
+            "UID": 34,
+            "Latitude": "31.40967",
+            "Longitude": "121.275844",
+            "lineName": null,
+            "LineID": "61",
+            "MID": "3",
+            "type": "0"
+        },
+        {
+            "name": "盛创企业家园华东 32所",
+            "UID": 35,
+            "Latitude": "31.406723",
+            "Longitude": "121.279177",
+            "lineName": null,
+            "LineID": "61",
+            "MID": "4",
+            "type": "0"
+        },
+        {
+            "name": "中核集团第八研究院所",
+            "UID": 36,
+            "Latitude": "31.404757",
+            "Longitude": "121.283357",
+            "lineName": null,
+            "LineID": "61",
+            "MID": "5",
+            "type": "0"
+        },
+        {
+            "name": "中科院上海应用物理研究所",
+            "UID": 37,
+            "Latitude": "31.409176",
+            "Longitude": "121.297142",
+            "lineName": null,
+            "LineID": "61",
+            "MID": "6",
+            "type": "0"
+        },
+        {
+            "name": "中科院上海应用物理研究所",
+            "UID": 38,
+            "Latitude": "31.409176",
+            "Longitude": "121.297142",
+            "lineName": null,
+            "LineID": "61",
+            "MID": "1",
+            "type": "1"
+        },
+        {
+            "name": "中核集团第八研究院所",
+            "UID": 39,
+            "Latitude": "31.404905",
+            "Longitude": "121.283531",
+            "lineName": null,
+            "LineID": "61",
+            "MID": "2",
+            "type": "1"
+        },
+        {
+            "name": "盛创企业家园华东 32所",
+            "UID": 40,
+            "Latitude": "31.406258",
+            "Longitude": "121.279393",
+            "lineName": null,
+            "LineID": "61",
+            "MID": "3",
+            "type": "1"
+        },
+        {
+            "name": "菊园科创大厦",
+            "UID": 41,
+            "Latitude": "31.409931",
+            "Longitude": "121.276168",
+            "lineName": null,
+            "LineID": "61",
+            "MID": "4",
+            "type": "1"
+        },
+        {
+            "name": "五月花广场华润万家",
+            "UID": 42,
+            "Latitude": "31.407698",
+            "Longitude": "121.258408",
+            "lineName": null,
+            "LineID": "61",
+            "MID": "5",
+            "type": "1"
+        },
+        {
+            "name": "嘉定北",
+            "UID": 43,
+            "Latitude": "31.395993",
+            "Longitude": "121.241824",
+            "lineName": null,
+            "LineID": "61",
+            "MID": "6",
+            "type": "1"
+        },
+        {
+            "name": "嘉定西【顺时针】",
+            "UID": 44,
+            "Latitude": "121.233086",
+            "Longitude": "31.382615",
+            "lineName": "嘉定工业区专线",
+            "LineID": "41",
+            "MID": "1",
+            "type": "0"
+        },
+        {
+            "name": "霍尼韦尔",
+            "UID": 45,
+            "Latitude": "121.216797",
+            "Longitude": "31.410009",
+            "lineName": "嘉定工业区专线",
+            "LineID": "41",
+            "MID": "2",
+            "type": "0"
+        },
+        {
+            "name": "宝马百度",
+            "UID": 46,
+            "Latitude": "121.210754",
+            "Longitude": "31.417414",
+            "lineName": "嘉定工业区专线",
+            "LineID": "41",
+            "MID": "3",
+            "type": "0"
+        },
+        {
+            "name": "嘉定工业区管委会",
+            "UID": 47,
+            "Latitude": "121.211586",
+            "Longitude": "31.421351",
+            "lineName": "嘉定工业区专线",
+            "LineID": "41",
+            "MID": "4",
+            "type": "0"
+        },
+        {
+            "name": "中广国际",
+            "UID": 48,
+            "Latitude": "121.21536",
+            "Longitude": "31.423774",
+            "lineName": "嘉定工业区专线",
+            "LineID": "41",
+            "MID": "5",
+            "type": "0"
+        },
+        {
+            "name": "联影医疗",
+            "UID": 49,
+            "Latitude": "121.218048",
+            "Longitude": "31.426227",
+            "lineName": "嘉定工业区专线",
+            "LineID": "41",
+            "MID": "6",
+            "type": "0"
+        },
+        {
+            "name": "金融谷",
+            "UID": 50,
+            "Latitude": "121.223352",
+            "Longitude": "31.420616",
+            "lineName": "嘉定工业区专线",
+            "LineID": "41",
+            "MID": "7",
+            "type": "0"
+        },
+        {
+            "name": "上大科技园",
+            "UID": 51,
+            "Latitude": "121.229735",
+            "Longitude": "31.412192",
+            "lineName": "嘉定工业区专线",
+            "LineID": "41",
+            "MID": "8",
+            "type": "0"
+        },
+        {
+            "name": " 桃李园学校",
+            "UID": 52,
+            "Latitude": "121.239656",
+            "Longitude": "31.401848",
+            "lineName": "嘉定工业区专线",
+            "LineID": "41",
+            "MID": "9",
+            "type": "0"
+        },
+        {
+            "name": "嘉定北",
+            "UID": 53,
+            "Latitude": "121.241726",
+            "Longitude": "31.396053",
+            "lineName": "嘉定工业区专线",
+            "LineID": "41",
+            "MID": "10",
+            "type": "0"
+        },
+        {
+            "name": "嘉定西",
+            "UID": 54,
+            "Latitude": "121.232145",
+            "Longitude": "31.38414",
+            "lineName": "嘉定工业区专线",
+            "LineID": "41",
+            "MID": "11",
+            "type": "0"
+        },
+        {
+            "name": "嘉定西【逆时针】",
+            "UID": 55,
+            "Latitude": "121.233086",
+            "Longitude": "31.382615",
+            "lineName": "嘉定工业区专线",
+            "LineID": "41",
+            "MID": "1",
+            "type": "1"
+        },
+        {
+            "name": "嘉定北",
+            "UID": 56,
+            "Latitude": "121.242846",
+            "Longitude": "31.397343",
+            "lineName": "嘉定工业区专线",
+            "LineID": "41",
+            "MID": "2",
+            "type": "1"
+        },
+        {
+            "name": "桃李园学校",
+            "UID": 57,
+            "Latitude": "121.239888",
+            "Longitude": "31.402046",
+            "lineName": "嘉定工业区专线",
+            "LineID": "41",
+            "MID": "3",
+            "type": "1"
+        },
+        {
+            "name": "上大科技园",
+            "UID": 58,
+            "Latitude": "121.230176",
+            "Longitude": "31.412115",
+            "lineName": "嘉定工业区专线",
+            "LineID": "41",
+            "MID": "4",
+            "type": "1"
+        },
+        {
+            "name": " 金融谷",
+            "UID": 59,
+            "Latitude": "121.223848",
+            "Longitude": "31.420116",
+            "lineName": "嘉定工业区专线",
+            "LineID": "41",
+            "MID": "5",
+            "type": "1"
+        },
+        {
+            "name": "联影医疗",
+            "UID": 60,
+            "Latitude": "121.217847",
+            "Longitude": "31.426093",
+            "lineName": "嘉定工业区专线",
+            "LineID": "41",
+            "MID": "6",
+            "type": "1"
+        },
+        {
+            "name": "中广国际",
+            "UID": 61,
+            "Latitude": "121.215021",
+            "Longitude": "31.423997",
+            "lineName": "嘉定工业区专线",
+            "LineID": "41",
+            "MID": "7",
+            "type": "1"
+        },
+        {
+            "name": "管委会",
+            "UID": 62,
+            "Latitude": "121.212606",
+            "Longitude": "31.422771",
+            "lineName": "嘉定工业区专线",
+            "LineID": "41",
+            "MID": "8",
+            "type": "1"
+        },
+        {
+            "name": "百度宝马",
+            "UID": 63,
+            "Latitude": "121.210411",
+            "Longitude": "31.417368",
+            "lineName": "嘉定工业区专线",
+            "LineID": "41",
+            "MID": "9",
+            "type": "1"
+        },
+        {
+            "name": "霍尼韦尔",
+            "UID": 64,
+            "Latitude": "121.216633",
+            "Longitude": "31.409892",
+            "lineName": "嘉定工业区专线",
+            "LineID": "41",
+            "MID": "10",
+            "type": "1"
+        },
+        {
+            "name": "嘉定西",
+            "UID": 65,
+            "Latitude": "121.232145",
+            "Longitude": "31.38414",
+            "lineName": "嘉定工业区专线",
+            "LineID": "41",
+            "MID": "11",
+            "type": "1"
+        },
+        {
+            "name": "嘉定北站",
+            "UID": 66,
+            "Latitude": "121.243513",
+            "Longitude": "31.395921",
+            "lineName": null,
+            "LineID": "121",
+            "MID": "1",
+            "type": "0"
+        },
+        {
+            "name": "嘉定中心医院",
+            "UID": 67,
+            "Latitude": "121.246579",
+            "Longitude": "31.394815",
+            "lineName": null,
+            "LineID": "121",
+            "MID": "2",
+            "type": "0"
+        },
+        {
+            "name": "罗宾森广场",
+            "UID": 68,
+            "Latitude": "121.252401",
+            "Longitude": "31.390527",
+            "lineName": null,
+            "LineID": "121",
+            "MID": "3",
+            "type": "0"
+        },
+        {
+            "name": "州桥老街|东方商厦",
+            "UID": 69,
+            "Latitude": "121.254971",
+            "Longitude": "31.38717",
+            "lineName": null,
+            "LineID": "121",
+            "MID": "4",
+            "type": "0"
+        },
+        {
+            "name": "孔庙|汇龙潭公园",
+            "UID": 70,
+            "Latitude": "121.257124",
+            "Longitude": "31.386697",
+            "lineName": null,
+            "LineID": "121",
+            "MID": "5",
+            "type": "0"
+        },
+        {
+            "name": "区政府|办证中心",
+            "UID": 71,
+            "Latitude": "121.272771",
+            "Longitude": "31.379957",
+            "lineName": null,
+            "LineID": "121",
+            "MID": "6",
+            "type": "0"
+        },
+        {
+            "name": "台北风情街|保利大剧院",
+            "UID": 72,
+            "Latitude": "121.268108",
+            "Longitude": "31.35897",
+            "lineName": null,
+            "LineID": "121",
+            "MID": "7",
+            "type": "0"
+        },
+        {
+            "name": "司法中心",
+            "UID": 73,
+            "Latitude": "121.262929",
+            "Longitude": "31.34991",
+            "lineName": null,
+            "LineID": "121",
+            "MID": "8",
+            "type": "0"
+        },
+        {
+            "name": "瑞金医院",
+            "UID": 74,
+            "Latitude": "121.264998",
+            "Longitude": "31.339651",
+            "lineName": null,
+            "LineID": "121",
+            "MID": "9",
+            "type": "0"
+        },
+        {
+            "name": "嘉定新城",
+            "UID": 75,
+            "Latitude": "121.261384",
+            "Longitude": "31.334624",
+            "lineName": null,
+            "LineID": "121",
+            "MID": "10",
+            "type": "0"
+        },
+        {
+            "name": "嘉定新城",
+            "UID": 76,
+            "Latitude": "121.260589",
+            "Longitude": "31.336602",
+            "lineName": null,
+            "LineID": "121",
+            "MID": "1",
+            "type": "1"
+        },
+        {
+            "name": "瑞金医院",
+            "UID": 77,
+            "Latitude": "121.265722",
+            "Longitude": "31.339764",
+            "lineName": null,
+            "LineID": "121",
+            "MID": "2",
+            "type": "1"
+        },
+        {
+            "name": "司法中心",
+            "UID": 78,
+            "Latitude": "121.262582",
+            "Longitude": "31.351219",
+            "lineName": null,
+            "LineID": "121",
+            "MID": "3",
+            "type": "1"
+        },
+        {
+            "name": "台北风情街|保利大剧院",
+            "UID": 79,
+            "Latitude": "121.265923",
+            "Longitude": "31.357771",
+            "lineName": null,
+            "LineID": "121",
+            "MID": "4",
+            "type": "1"
+        },
+        {
+            "name": "区政府|办证中心",
+            "UID": 80,
+            "Latitude": "121.273326",
+            "Longitude": "31.379932",
+            "lineName": null,
+            "LineID": "121",
+            "MID": "5",
+            "type": "1"
+        },
+        {
+            "name": "孔庙|汇龙潭公园",
+            "UID": 81,
+            "Latitude": "121.257254",
+            "Longitude": "31.386785",
+            "lineName": null,
+            "LineID": "121",
+            "MID": "6",
+            "type": "1"
+        },
+        {
+            "name": "州桥老街|东方商厦",
+            "UID": 82,
+            "Latitude": "121.254714",
+            "Longitude": "31.387579",
+            "lineName": null,
+            "LineID": "121",
+            "MID": "7",
+            "type": "1"
+        },
+        {
+            "name": "罗宾森广场",
+            "UID": 83,
+            "Latitude": "121.252448",
+            "Longitude": "31.390757",
+            "lineName": null,
+            "LineID": "121",
+            "MID": "8",
+            "type": "1"
+        },
+        {
+            "name": "嘉定中心医院",
+            "UID": 84,
+            "Latitude": "121.245542",
+            "Longitude": "31.395349",
+            "lineName": null,
+            "LineID": "121",
+            "MID": "9",
+            "type": "1"
+        },
+        {
+            "name": "嘉定北站",
+            "UID": 85,
+            "Latitude": "121.242844",
+            "Longitude": "31.397323",
+            "lineName": null,
+            "LineID": "121",
+            "MID": "10",
+            "type": "1"
+        }
+    ]
+}

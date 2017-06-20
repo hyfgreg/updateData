@@ -58,3 +58,6 @@ BUCKET_NAME = 'yimove'
 access_key = 'WxtU5PasZSCeEnuWZl_QtnlaIanDVSN7jO4s03HC'
 secret_key = 'GeRvR9HYjmwaM75PilZumocBfmfnv7KboMFWVp1f'
 q = Auth(access_key, secret_key)
+
+#拼音的配置
+pinyinDict = os.getcwd()+'/pinyin/word.data'

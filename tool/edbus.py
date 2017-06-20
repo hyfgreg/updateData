@@ -15,13 +15,13 @@ class Edbus(object):
     def __init__(self):
         self._data = OrderedDict(
             {
-                'BusSchedule': [None, self.setBusSchedule],
+                # 'BusSchedule': [None, self.setBusSchedule],
                 'RouteList': [None, self.setRouteList],
                 'RouteStationList': [None, self.setRouteStationList]
             }
         )
         self._routeSeq = []
-        #self._client = self.setClient()
+        self._client = self.setClient()
 
     def setClient(self):
         return pymongo.MongoClient(MONGO_URL,connect=False)
@@ -111,7 +111,7 @@ class Edbus(object):
 
     def printRouteStationList(self):
         if self._data['RouteStationList'][0]:
-            return self._data['RouteStationList'][0]
+            print(self._data['RouteStationList'][0])
 
     def getRouteSeq(self):
         if not self._data['RouteList'][0]:
@@ -123,7 +123,7 @@ class Edbus(object):
 
     def printRouteList(self):
         if self._data['RouteList'][0]:
-            return self._data['RouteList'][0]
+            print(self._data['RouteList'][0])
 
     #设置线路信息
     def setRouteList(self):
@@ -179,48 +179,62 @@ class Edbus(object):
         today = date.today().strftime('%Y-%m-%d')
         return MONGO_DB.get('驿动')+fileName+today+'.json'
 
+    def saveData(self,data,filename):
+        with open(DATAFOLDER + self.getFileName(filename), 'w', encoding='utf-8') as f:
+            f.write(json.dumps(data, ensure_ascii=False, indent=4))
+            # f.write('\r')
+        print('保存成功 ', filename)
+
     def save(self):
         try:
             for k,v in self._data.items():
                 print(k)
                 if v[0] == None:
                     v[1]()
-                with open(DATAFOLDER + self.getFileName(fileName=k), 'w', encoding='utf-8') as f:
-                    myL = []
-                    for item in v[0]:
-                        myL.append(item)
-                    f.write(json.dumps(myL, ensure_ascii=False, indent=4))
-                    #f.write('\r')
-                print('保存成功 ', k)
+                self.saveData(v[0],k)
             return True
         except Exception as e:
             raise e
+
+    def uploadData(self,filename):
+        key = self.getFileName(filename)
+        localfile = DATAFOLDER + self.getFileName(filename)
+        token = q.upload_token(BUCKET_NAME, key, 3600)
+        ret, info = put_file(token, key, localfile)
+        print(info)
+        assert ret['key'] == key
+        assert ret['hash'] == etag(localfile)
+        print('成功上传文档{}至{}'.format(localfile, BUCKET_NAME))
 
     def upload(self):
         try:
-            self.save()
             for k,v in self._data.items():
-                key = self.getFileName(fileName=k)
-                localfile = DATAFOLDER + self.getFileName(fileName=k)
-                token = q.upload_token(BUCKET_NAME, key, 3600)
-                ret, info = put_file(token, key, localfile)
-                print(info)
-                assert ret['key'] == key
-                assert ret['hash'] == etag(localfile)
-                print('成功上传文档{}至{}'.format(localfile, BUCKET_NAME))
+                if not v[0]:
+                    self.save()
+                self.uploadData(k)
             return True
         except Exception as e:
             raise e
 
-# def save2DB(item,Table=None):
-#     if Table and db[Table].insert(item):
-#         print('保存到DB成功,',item)
-#         return True
-#     if Table==None:
-#         print('请输出集合名称!')
-#     return False
+    def mongoData(self,data):
+        today = date.today().strftime('%Y-%m-%d')
+        return {today:data}
+
+    def saveToMongo(self):
+        try:
+            db = self._client[MONGO_DB.get('驿动')]
+            for k,v in self._data.items():
+                if not v[0]:
+                    v[1]()
+                print(v[0])
+                if db[k].insert(self.mongoData(v[0])):
+                    print('保存到DB成功,',k)
+        except Exception:
+            raise Exception
 
 if __name__ == '__main__':
     e = Edbus()
     e.setRouteStationList()
-    print(e.printRouteStationList())
+    e.printRouteStationList()
+    e.setRouteList()
+    e.printRouteList()

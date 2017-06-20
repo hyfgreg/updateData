@@ -1,0 +1,22 @@
+{
+    "network_node_evcard": [
+        {
+            "Latitude": "30.555",
+            "Longitude": "117.215",
+            "UID": "3409",
+            "name": "（非运营）安庆测试1",
+            "address": "安徽省安庆市",
+            "n_car": "0",
+            "MID": "5835"
+        },
+        {
+            "Latitude": "30.55555",
+            "Longitude": "117.21528",
+            "UID": "3410",
+            "name": "（非运营）安庆测试2",
+            "address": "安徽省安庆市-1",
+            "n_car": "0",
+            "MID": "5957"
+        }
+    ]
+}
