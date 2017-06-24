@@ -1,5 +1,7 @@
 import json
 from collections import OrderedDict
+
+import copy
 import requests
 import pymongo
 import time
@@ -14,24 +16,36 @@ py.load_word()
 
 class Evcard(object):
     def __init__(self):
-        self._data = OrderedDict(
-            {
-                'AreaCodeList': [None, self.saveAreaCodeList,self.saveAreaCodeListToMongo,self.uploadAreaCodeList],
-                'ShopInfoList': [None, self.saveCityShopInfoList,self.saveCityShopInfoListToMongo,self.uploadCityShopInfoList],
-                'VehicleModeList': [None, self.saveVehicleModeList,self.saveVehicleModeListToMongo,self.uploadVehicleModeList]
-            }
-        )
+        self._data = self.setData()
+        #     {
+        #         'AreaCodeList': [None, self.saveAreaCodeList,self.saveAreaCodeListToMongo,self.uploadAreaCodeList],
+        #         'ShopInfoList': [None, self.saveCityShopInfoList,self.saveCityShopInfoListToMongo,self.uploadCityShopInfoList],
+        #         'VehicleModeList': [None, self.saveVehicleModeList,self.saveVehicleModeListToMongo,self.uploadVehicleModeList]
+        #     }
+        # )
         self.cityDict = None
         self.cityList = None
         self.cityListEN = None
         self._client = self.setClient()
 
+    def setData(self):
+        data = OrderedDict()
+        data['AreaCodeList'] = [None, self.saveAreaCodeList,self.saveAreaCodeListToMongo,self.uploadAreaCodeList]
+        data['ShopInfoList'] = [None, self.saveCityShopInfoList,self.saveCityShopInfoListToMongo,self.uploadCityShopInfoList]
+        data['VehicleModeList'] = [None, self.saveVehicleModeList,self.saveVehicleModeListToMongo,self.uploadVehicleModeList]
+        return data
+
+    def showData(self):
+        for k,v in self._data.items():
+            print(v)
+
     def setClient(self):
         return pymongo.MongoClient(MONGO_URL)
 
-    def testPrint(self):
-        for item in self._data['AreaCodeList'][0]:
-            print(item)
+    def testCron(self):
+        with open('/home/hyfgreg/updateData/test.txt','a',encoding='utf-8') as f:
+            for item in self._data['AreaCodeList'][0]:
+                f.write(json.dumps(item))
 
     def setAreaCodeList(self):
         self._data['AreaCodeList'][0] = self.parseData(self.getAreaCodeList())
@@ -48,20 +62,26 @@ class Evcard(object):
             raise Exception
 
     def saveAreaCodeList(self):
-        if self._data['AreaCodeList'][0] == None:
-            self.setAreaCodeList()
+        # if not self._data['AreaCodeList'][0]:
+        self.setAreaCodeList()
+        self.showData()
         myL = []
+
         for item in self._data['AreaCodeList'][0]:
             myL.append(item)
+        self._data['AreaCodeList'] = copy.deepcopy(myL)
         self.saveData(myL,'AreaCodeList')
 
+
     def saveAreaCodeListToMongo(self):
-        if not self._data['AreaCodeList'][0]:
-            self.setAreaCodeList()
+        # if not self._data['AreaCodeList'][0]:
+        self.setAreaCodeList()
+        self.showData()
         today = self.getDate()
         data = {today:[]}
         for item in self._data['AreaCodeList'][0]:
             data[today].append(item)
+        # self._data['AreaCodeList'] = copy.deepcopy(data[today])
         self.saveToDB(data,Table = 'AreaCodeList')
 
     def uploadAreaCodeList(self):
@@ -85,11 +105,16 @@ class Evcard(object):
             raise RequestException
 
     def getCityList(self):
-        db = self._client[MONGO_DB['evcard']]['AreaCodeList' + self.getDate()]
-        if not db.find().distinct('city'):
+        db = self._client[MONGO_DB['evcard']]['AreaCodeList']
+        if not db.find_one({self.getDate(): {'$exists': True}}, {'_id': 0}):
             self.setAreaCodeList()
             self.saveAreaCodeListToMongo()
-        cityList = db.find().distinct('city')
+        # data = db.find_one({self.getDate():{'$exists':True}},{'_id':0})
+        data = db.find_one({self.getDate(): {'$exists': True}}, {'_id': 0})
+        # print(data)
+        tmp = data.get(self.getDate())
+        # print(tmp)
+        cityList = list(set([item.get('city') for item in tmp]))
         cityListEn = []
         for item in cityList:
             nameL = py.hanzi2pinyin(item[:-1])
@@ -99,18 +124,28 @@ class Evcard(object):
             cityListEn.append(name)
         self.cityList = cityList
         self.cityListEN = cityListEn
+        # print(cityList)
+        # print(cityListEn)
 
     def parseShopInfoList(self):
         self.getCityList()
         # client = pymongo.MongoClient(MONGO_URL)
-        db = self._client[MONGO_DB['evcard']]['AreaCodeList' + self.getDate()]
+        # db = self._client[MONGO_DB['evcard']]['AreaCodeList' + self.getDate()] # 这里也有问题！！！
+        today = self.getDate()
+        db = self._client[MONGO_DB['evcard']]['AreaCodeList']
         cityDict = {key:{'network_node_evcard':[]} for key in self.cityListEN}
         dataTemp = self.parseData(self.getShopInfoList())
+        # print(dataTemp)
         uid = 1
         no = []
         allDict = {'network_node_evcard':[]}
-
+        allCity = db.find_one({today: {'$exists': True}}, {'_id': 0})
+        codeToCity = {}
+        for item in allCity.get(today):
+            codeToCity[item.get('code')] = item.get('city')
+        # print(codeToCity)
         for item in dataTemp:
+            # print(item)
             node = {
                 'UID':str(uid),
                 'Longitude':str(item.get('longitude')/1000000),
@@ -124,12 +159,15 @@ class Evcard(object):
             areaCode = item.get('areaCode')
 
             try:
-                city = db.find_one({'code':areaCode}).get('city')
+                city = codeToCity.get(areaCode)
+
+                # city = db.find({'code':areaCode}).get('city') #这个有问题！！！
                 cityDict[self.cityListEN[self.cityList.index(city)]]['network_node_evcard'].append(node)
                 uid += 1
             except AttributeError:
                 no.append(node)
                 uid += 1
+        # print(cityDict)
         self.cityDict = cityDict
         self._data['ShopInfoList'][0] = allDict
         # return allDict,cityDict,no
@@ -138,7 +176,7 @@ class Evcard(object):
     def saveCityShopInfoList(self):
         if not self.cityDict:
             self.parseShopInfoList()
-        today = date.today().strftime('%Y-%m-%d')
+        # today = date.today().strftime('%Y-%m-%d')
         all = self.cityDict
         for key in all.keys():
             self.saveData(all.get(key),key)
@@ -191,6 +229,7 @@ class Evcard(object):
     def saveVehicleModeList(self):
         if self._data['VehicleModeList'][0] == None:
             self.setVehicleModeList()
+        self.showData()
         myL = []
         for item in self._data['VehicleModeList'][0]:
             myL.append(item)
@@ -199,6 +238,7 @@ class Evcard(object):
     def saveVehicleModeListToMongo(self):
         if not self._data['VehicleModeList'][0]:
             self.setVehicleModeList()
+        self.showData()
         today = self.getDate()
         data = {today:[]}
         for item in self._data['VehicleModeList'][0]:
@@ -226,12 +266,12 @@ class Evcard(object):
     def saveData(self,data,fileName):
         with open(DATAFOLDER+self.getFileName(fileName),'w',encoding='utf-8') as f:
             f.write(json.dumps(data,ensure_ascii=False,indent=4))
-        print('保存成功',fileName)
+        print('保存{0}到本地成功'.format(self.getFileName(fileName)))
 
     def save(self):
         try:
             for k,v in self._data.items():
-                print(k)
+                print('开始保存{0}到本地'.format(k))
                 v[1]()
             return True
         except Exception as e:
@@ -240,20 +280,23 @@ class Evcard(object):
     def saveToMongo(self):
         try:
             for k,v in self._data.items():
-                print(k)
+                print('开始保存'+k+'到MongoDB')
                 v[2]()
-            return True
+            # return True
         except Exception:
             raise Exception
 
     def upload(self):
         try:
+            # print(self._data)
             for k,v in self._data.items():
-                print(k)
-                v[3]()
-            return True
-        except Exception as e:
-            raise e
+                print('开始上传{0}'.format(k))
+                # print(v[3])
+                print(v)
+                # v[3]()
+            # return True
+        except Exception:
+            pass
 
 
     def uploadData(self,filename):
@@ -288,7 +331,7 @@ class Evcard(object):
 
 if __name__ == '__main__':
     ev = Evcard()
-    ev.saveAreaCodeListToMongo()
+    ev.saveVehicleModeListToMongo()
 
     # allDict, cityDict, no = ev.parseShopInfoList()
     # print(allDict)

@@ -2,7 +2,10 @@ from tool.weather import Weather
 from tool.edbus import Edbus
 from tool.evcard import Evcard
 from config import CITY
+from apscheduler.schedulers.blocking import BlockingScheduler
+from apscheduler.jobstores.mongodb import MongoDBJobStore
 from pinyin.pinyin import PinYin
+import pymongo
 
 def main():
     for k,_ in CITY.items():
@@ -17,38 +20,20 @@ def main():
     ed.saveToMongo()
 
     ev = Evcard()
+    ev.saveToMongo()
     ev.save()
     ev.upload()
-    ev.saveToMongo()
-
-    # e = Edbus()
-    # e.upload()
-    # ev = Evcard()
-    # # ev.saveAreaCodeList()
-    # # ev.saveCityShopInfoList()
-    # # ev.saveVehicleModeList()
-    # # ev.saveAreaCodeListToMongo()
-    # # ev.saveCityShopInfoListToMongo()
-    # # ev.saveVehicleModeListToMongo()
-    #
-    # ev.uploadAreaCodeList()
-    # ev.uploadCityShopInfoList()
-    # ev.uploadVehicleModeList()
-
-    # allDict, cityDict, no = ev.parseShopInfoList()
-    # for key in cityDict.keys():
-    #     print(key + '=' , cityDict.get(key))
-    # ev.upload()
-    # test = PinYin()
-    # test.load_word()
-    # string = "钓鱼岛是中国的"
-    # print("in: %s" % string)
-    # print("out: %s" % str(test.hanzi2pinyin(string=string)))
-    # print("out: %s" % test.hanzi2pinyin_split(string=string, split="-"))
-
-
-
 
 
 if __name__ == '__main__':
-    main()
+    sched = BlockingScheduler()
+    client = pymongo.MongoClient(host='localhost')
+    store = MongoDBJobStore(collection='version_1',database='sched',client=client)
+    sched.add_jobstore(store)
+    sched.add_job(main, 'cron', hour=0,minute=30)
+    print('Job Start!!!')
+    try:
+        sched.start()
+    except KeyboardInterrupt:
+        sched.remove_all_jobs()
+        client.close()
