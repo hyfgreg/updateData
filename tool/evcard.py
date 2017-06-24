@@ -37,7 +37,7 @@ class Evcard(object):
 
     def showData(self):
         for k,v in self._data.items():
-            print(v)
+            print(v[-3:])
 
     def setClient(self):
         return pymongo.MongoClient(MONGO_URL)
@@ -62,26 +62,22 @@ class Evcard(object):
             raise Exception
 
     def saveAreaCodeList(self):
-        # if not self._data['AreaCodeList'][0]:
-        self.setAreaCodeList()
-        self.showData()
+        if not self._data['AreaCodeList'][0]:
+            self.setAreaCodeList()
         myL = []
 
         for item in self._data['AreaCodeList'][0]:
             myL.append(item)
-        self._data['AreaCodeList'] = copy.deepcopy(myL)
         self.saveData(myL,'AreaCodeList')
 
 
     def saveAreaCodeListToMongo(self):
-        # if not self._data['AreaCodeList'][0]:
-        self.setAreaCodeList()
-        self.showData()
+        if not self._data['AreaCodeList'][0]:
+            self.setAreaCodeList()
         today = self.getDate()
         data = {today:[]}
         for item in self._data['AreaCodeList'][0]:
             data[today].append(item)
-        # self._data['AreaCodeList'] = copy.deepcopy(data[today])
         self.saveToDB(data,Table = 'AreaCodeList')
 
     def uploadAreaCodeList(self):
@@ -229,7 +225,6 @@ class Evcard(object):
     def saveVehicleModeList(self):
         if self._data['VehicleModeList'][0] == None:
             self.setVehicleModeList()
-        self.showData()
         myL = []
         for item in self._data['VehicleModeList'][0]:
             myL.append(item)
@@ -238,7 +233,6 @@ class Evcard(object):
     def saveVehicleModeListToMongo(self):
         if not self._data['VehicleModeList'][0]:
             self.setVehicleModeList()
-        self.showData()
         today = self.getDate()
         data = {today:[]}
         for item in self._data['VehicleModeList'][0]:
@@ -253,9 +247,11 @@ class Evcard(object):
     def parseData(self,text):
         try:
             data = json.loads(text)
+            myD = []
             if data:
                 for item in data:
-                    yield item
+                    myD.append(item)
+            return myD
         except Exception:
             raise Exception
 
@@ -288,15 +284,12 @@ class Evcard(object):
 
     def upload(self):
         try:
-            # print(self._data)
             for k,v in self._data.items():
                 print('开始上传{0}'.format(k))
-                # print(v[3])
-                print(v)
-                # v[3]()
+                v[3]()
             # return True
         except Exception:
-            pass
+            raise Exception
 
 
     def uploadData(self,filename):
