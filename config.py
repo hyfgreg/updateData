@@ -54,7 +54,17 @@ if platform.platform().startswith('W'):
     DATAFOLDER = os.getcwd()+'\\data\\'
 else:
     DATAFOLDER = os.getcwd() + '/data/'
-BUCKET_NAME = 'yimove'
+# BUCKET_NAME = 'yimove'
+BUCKET_NAME = {
+    'default':'yimove',
+    'edrs':'edbusroutelist',
+    'edrsl':'edbusroutestationlist',
+    'edtt':'edbustimetable',
+    'evacl':'evcardareacodelist',
+    'evcsl':'evcardcityshoplist',
+    'evvml':'evcardvehiclemodelist',
+    'weather':'weather'
+}
 access_key = 'WxtU5PasZSCeEnuWZl_QtnlaIanDVSN7jO4s03HC'
 secret_key = 'GeRvR9HYjmwaM75PilZumocBfmfnv7KboMFWVp1f'
 q = Auth(access_key, secret_key)

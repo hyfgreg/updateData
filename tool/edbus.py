@@ -179,6 +179,10 @@ class Edbus(object):
         today = date.today().strftime('%Y-%m-%d')
         return MONGO_DB.get('驿动')+fileName+today+'.json'
 
+    def getFileKey(self,fileName):
+        today = date.today().strftime('%Y-%m-%d')
+        return MONGO_DB.get('驿动') + '/' + fileName + today + '.json'
+
     def saveData(self,data,filename):
         with open(DATAFOLDER + self.getFileName(filename), 'w', encoding='utf-8') as f:
             f.write(json.dumps(data, ensure_ascii=False, indent=4))
@@ -196,22 +200,23 @@ class Edbus(object):
         except Exception as e:
             raise e
 
-    def uploadData(self,filename):
-        key = self.getFileName(filename)
+    def uploadData(self,filename,bucketname):
+        key = self.getFileKey(filename)
         localfile = DATAFOLDER + self.getFileName(filename)
-        token = q.upload_token(BUCKET_NAME, key, 3600)
+        token = q.upload_token(bucketname, key, 3600)
         ret, info = put_file(token, key, localfile)
         print(info)
         assert ret['key'] == key
         assert ret['hash'] == etag(localfile)
-        print('成功上传文档{}至{}'.format(localfile, BUCKET_NAME))
+        print('成功上传文档{}至{}'.format(localfile, bucketname))
 
     def upload(self):
         try:
             for k,v in self._data.items():
                 if not v[0]:
                     self.save()
-                self.uploadData(k)
+                bucketname = k.lower()
+                self.uploadData(k,BUCKET_NAME['default'])
             return True
         except Exception as e:
             raise e

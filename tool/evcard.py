@@ -83,7 +83,7 @@ class Evcard(object):
     def uploadAreaCodeList(self):
         if not self._data['AreaCodeList'][0]:
             self.saveAreaCodeList()
-        self.uploadData('AreaCodeList')
+        self.uploadData('AreaCodeList',BUCKET_NAME['default'])
 
     def setShopInfoList(self):
         self._data['ShopInfoList'][0] = self.parseData(self.getShopInfoList())
@@ -205,7 +205,7 @@ class Evcard(object):
                 # assert ret['key'] == key
                 # assert ret['hash'] == etag(localfile)
                 # print('成功上传文档{}至{}'.format(localfile, BUCKET_NAME))
-                self.uploadData(city)
+                self.uploadData(city,BUCKET_NAME['default'])
         except Exception:
             pass
 
@@ -242,7 +242,7 @@ class Evcard(object):
     def uploadVehicleModeList(self):
         if not self._data['VehicleModeList'][0]:
             self.setVehicleModeList()
-        self.uploadData('VehicleModeList')
+        self.uploadData('VehicleModeList',BUCKET_NAME['default'])
 
     def parseData(self,text):
         try:
@@ -258,6 +258,10 @@ class Evcard(object):
     def getFileName(self,fileName):
         today = date.today().strftime('%Y-%m-%d')
         return MONGO_DB.get('evcard')+fileName+today+'.json'
+
+    def getFileKey(self,fileName):
+        today = date.today().strftime('%Y-%m-%d')
+        return MONGO_DB.get('evcard') + '/' +fileName + today + '.json'
 
     def saveData(self,data,fileName):
         with open(DATAFOLDER+self.getFileName(fileName),'w',encoding='utf-8') as f:
@@ -292,16 +296,16 @@ class Evcard(object):
             raise Exception
 
 
-    def uploadData(self,filename):
+    def uploadData(self,filename,bucketname):
         try:
-            key = self.getFileName(filename)
+            key = self.getFileKey(filename)
             localfile = DATAFOLDER + self.getFileName(filename)
-            token = q.upload_token(BUCKET_NAME, key, 3600)
+            token = q.upload_token(bucketname, key, 3600)
             ret, info = put_file(token, key, localfile)
             print(info)
             assert ret['key'] == key
             assert ret['hash'] == etag(localfile)
-            print('成功上传文档{}至{}'.format(localfile, BUCKET_NAME))
+            print('成功上传文档{}至{}'.format(localfile, bucketname))
             return True
         except Exception as e:
             raise e

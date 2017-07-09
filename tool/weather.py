@@ -12,6 +12,7 @@ class Weather(object):
         self._city = city
         self._cityPY = None
         self._cityFileName = None
+        self._cityKey = None
         self._client = self.setClient()
         self._weather = None
         self._check = {date.today():False}
@@ -28,6 +29,7 @@ class Weather(object):
         today = date.today().strftime('%Y-%m-%d')
         self.setPY()
         self._cityFileName = 'weather'+self._cityPY+today+'.json'
+        self._cityKey = 'weather/' +self._cityPY+today+'.json'
 
     def setCityWeather(self):
         url = host+path_get_weather+'city='+self._city
@@ -87,20 +89,20 @@ class Weather(object):
 
     def upload(self):
         try:
-            if not self._check[date.today()]:
-                #print(self._check[date.today()])
-                self.save()
-            else:
-                print('今日已经上传{}'.format(self._cityFileName))
-                return True
-            key = self._cityFileName
+            # if not self._check[date.today()]:
+            #     #print(self._check[date.today()])
+            #     self.save()
+            # else:
+            #     print('今日已经上传{}'.format(self._cityFileName))
+            #     return True
+            key = self._cityKey
             localfile = DATAFOLDER+self._cityFileName
-            token = q.upload_token(BUCKET_NAME, key, 3600)
+            token = q.upload_token(BUCKET_NAME['default'], key, 3600)
             ret, info = put_file(token, key, localfile)
             print(info)
             assert ret['key'] == key
             assert ret['hash'] == etag(localfile)
-            print('成功上传文档{}至{}'.format(localfile, BUCKET_NAME))
+            print('成功上传文档{}至{}'.format(localfile, BUCKET_NAME['default']))
             return True
         except Exception as e:
             raise e
